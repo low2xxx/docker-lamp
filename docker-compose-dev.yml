@@ -1,0 +1,10 @@
+version: '3'
+
+volumes:
+  sync-volume:
+    external: true
+
+services:
+  app:
+    volumes:
+      - sync-volume:/var/www/
